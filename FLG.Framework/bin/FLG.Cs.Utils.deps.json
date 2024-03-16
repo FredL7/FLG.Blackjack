@@ -1,0 +1,29 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FLG.Cs.Utils/0.1.0": {
+        "dependencies": {
+          "FLG.Cs.Decorators": "0.1.0",
+          "FLG.Cs.IDatamodel": "0.1.0",
+          "FLG.Cs.Math": "0.1.0",
+          "FLG.Cs.ServiceLocator": "0.1.0"
+        },
+        "runtime": {
+          "FLG.Cs.Utils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FLG.Cs.Utils/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

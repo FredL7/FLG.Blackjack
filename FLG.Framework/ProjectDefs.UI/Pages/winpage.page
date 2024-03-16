@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <binding class="Winpage" />
+  <layout id="main">
+    <target id="content">
+      <VStack name="page-content">
+        <VStack target="win-section" justify="center" align="center" />
+        <VStack target="replay-section" justify="center" align="center" />
+      </VStack>
+    </target>
+  </layout>
+</page>

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Godot.SourceGenerators" Version="4.1.1" />
+    <PackageReference Include="GodotSharp" Version="4.1.1" />
+    <PackageReference Include="GodotSharpEditor" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blackjack\Blackjack.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FLG.Cs.Decorators">
+      <HintPath>..\bin\FLG.Cs.Decorators.dll</HintPath>
+    </Reference>
+    <Reference Include="FLG.Cs.IDatamodel">
+      <HintPath>..\bin\FLG.Cs.IDatamodel.dll</HintPath>
+    </Reference>
+    <Reference Include="FLG.Cs.Math">
+      <HintPath>..\bin\FLG.Cs.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="FLG.Cs.ServiceLocator">
+      <HintPath>..\bin\FLG.Cs.ServiceLocator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

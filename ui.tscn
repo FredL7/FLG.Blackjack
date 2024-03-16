@@ -1,0 +1,200 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdhf2jm05lbhw"]
+
+[ext_resource type="Script" path="res://UITool.cs" id="1_ey55o"]
+[ext_resource type="Texture2D" uid="uid://claboqieiv511" path="res://hero-banner.jpg" id="2_6njsa"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layouts" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ey55o")
+
+[node name="layout main" type="Control" parent="Layouts"]
+anchors_preset = 0
+offset_right = 800.0
+offset_bottom = 600.0
+
+[node name="content (FLG_Cs_UI_Grids_Container)" type="Control" parent="Layouts/layout main"]
+anchors_preset = 0
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 700.0
+offset_bottom = 500.0
+
+[node name="Gamepage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="page-content (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="Gamepage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)"]
+visible = false
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="dealer-section (FLG_Cs_UI_Grids_HStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 133.333
+
+[node name="dealer-label" type="RichTextLabel" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage/dealer-section (FLG_Cs_UI_Grids_HStack)"]
+layout_mode = 0
+offset_top = 34.6667
+offset_right = 128.0
+offset_bottom = 98.6667
+bbcode_enabled = true
+
+[node name="dealer-hand" type="RichTextLabel" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage/dealer-section (FLG_Cs_UI_Grids_HStack)"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 34.6667
+offset_right = 600.0
+offset_bottom = 98.6667
+bbcode_enabled = true
+
+[node name="player-section (FLG_Cs_UI_Grids_HStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage"]
+anchors_preset = 0
+offset_top = 133.333
+offset_right = 600.0
+offset_bottom = 266.667
+
+[node name="player-label" type="RichTextLabel" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage/player-section (FLG_Cs_UI_Grids_HStack)"]
+layout_mode = 0
+offset_top = 34.6667
+offset_right = 128.0
+offset_bottom = 98.6667
+bbcode_enabled = true
+
+[node name="player-hand" type="RichTextLabel" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage/player-section (FLG_Cs_UI_Grids_HStack)"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = 34.6667
+offset_right = 600.0
+offset_bottom = 98.6667
+bbcode_enabled = true
+
+[node name="game-controls (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage"]
+anchors_preset = 0
+offset_top = 266.667
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="deal-btn" type="Button" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage/game-controls (FLG_Cs_UI_Grids_VStack)"]
+layout_mode = 0
+offset_right = 600.0
+offset_bottom = 56.6667
+text = "Deal"
+
+[node name="check-btn" type="Button" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Gamepage/page-content (FLG_Cs_UI_Grids_VStack)/Gamepage/game-controls (FLG_Cs_UI_Grids_VStack)"]
+layout_mode = 0
+offset_top = 76.6667
+offset_right = 600.0
+offset_bottom = 133.333
+text = "Stand"
+
+[node name="Homepage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)"]
+visible = false
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="page-content (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="Homepage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="hero-section (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)/Homepage"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 250.0
+
+[node name="Homepage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)/Homepage/hero-section (FLG_Cs_UI_Grids_VStack)"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 250.0
+
+[node name="hero-banner" type="TextureRect" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)/Homepage/hero-section (FLG_Cs_UI_Grids_VStack)/Homepage"]
+layout_mode = 0
+texture = ExtResource("2_6njsa")
+
+[node name="controls-section (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)/Homepage"]
+anchors_preset = 0
+offset_top = 250.0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="Homepage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)/Homepage/controls-section (FLG_Cs_UI_Grids_VStack)"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 150.0
+
+[node name="play-btn" type="Button" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Homepage/page-content (FLG_Cs_UI_Grids_VStack)/Homepage/controls-section (FLG_Cs_UI_Grids_VStack)/Homepage"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 120.0
+offset_right = 400.0
+offset_bottom = 150.0
+text = "Play"
+
+[node name="Winpage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="page-content (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Winpage"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="Winpage" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Winpage/page-content (FLG_Cs_UI_Grids_VStack)"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="win-section (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Winpage/page-content (FLG_Cs_UI_Grids_VStack)/Winpage"]
+anchors_preset = 0
+offset_right = 600.0
+offset_bottom = 200.0
+
+[node name="win-text" type="RichTextLabel" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Winpage/page-content (FLG_Cs_UI_Grids_VStack)/Winpage/win-section (FLG_Cs_UI_Grids_VStack)"]
+layout_mode = 0
+offset_left = 150.0
+offset_top = -50.0
+offset_right = 450.0
+offset_bottom = 250.0
+bbcode_enabled = true
+
+[node name="replay-section (FLG_Cs_UI_Grids_VStack)" type="Control" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Winpage/page-content (FLG_Cs_UI_Grids_VStack)/Winpage"]
+anchors_preset = 0
+offset_top = 200.0
+offset_right = 600.0
+offset_bottom = 400.0
+
+[node name="replay-btn" type="Button" parent="Layouts/layout main/content (FLG_Cs_UI_Grids_Container)/Winpage/page-content (FLG_Cs_UI_Grids_VStack)/Winpage/replay-section (FLG_Cs_UI_Grids_VStack)"]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 85.0
+offset_right = 400.0
+offset_bottom = 115.0
+text = "Play again"

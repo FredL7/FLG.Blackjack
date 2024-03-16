@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <binding class="Gamepage" />
+  <layout id="main">
+    <target id="content">
+      <VStack name="page-content">
+        <HStack target="dealer-section" justify="center" align="center">
+        </HStack>
+        <HStack target="player-section" justify="center" align="center">
+        </HStack>
+        <VStack target="game-controls" />
+      </VStack>
+    </target>
+  </layout>
+</page>

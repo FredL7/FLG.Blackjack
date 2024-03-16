@@ -1,0 +1,14 @@
+<Project>
+ <PropertyGroup>
+    <BaseOutputPath>$(SolutionDir)\.godot\mono\temp\bin</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(SolutionDir)\.godot\mono\temp\obj</BaseIntermediateOutputPath>
+    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+    <OutputPath>$(BaseOutputPath)\$(Configuration)</OutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)\$(Configuration)</IntermediateOutputPath>
+   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+ </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+</Project>

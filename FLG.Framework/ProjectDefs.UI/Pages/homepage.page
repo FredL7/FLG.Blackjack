@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <binding class="Homepage" />
+  <layout id="main">
+    <target id="content">
+      <VStack name="page-content">
+        <VStack name="hero-section" justify="start" align="center" height="250">
+          <Sprite name="hero-banner" source="hero-banner.jpg" />
+        </VStack>
+        <VStack target="controls-section" justify="end" align="center" />
+      </VStack>
+    </target>
+  </layout>
+</page>

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GodotSharp" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="FLG.Cs.Cards">
+      <HintPath>..\bin\FLG.Cs.Cards.dll</HintPath>
+    </Reference>
+    <Reference Include="FLG.Cs.Decorators">
+      <HintPath>..\bin\FLG.Cs.Decorators.dll</HintPath>
+    </Reference>
+    <Reference Include="FLG.Cs.IDatamodel">
+      <HintPath>..\bin\FLG.Cs.IDatamodel.dll</HintPath>
+    </Reference>
+    <Reference Include="FLG.Cs.ServiceLocator">
+      <HintPath>..\bin\FLG.Cs.ServiceLocator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
